@@ -1,10 +1,5 @@
 document.addEventListener('alpine:init', () => {
-  console.log("Alpine is initializing..."); 
-    // Alpine.plugin(AlpinePersist);
-    // Alpine.plugin(window.AlpinePersist);
-  
     Alpine.data('todoApp', () => ({
-      // 
       listTodo: Alpine.$persist([]).as('listTodo'),
       newTodo: '',
       state: Alpine.$persist({total: 0, completed: 0, filter:'all' }).as('state'),
